@@ -1,0 +1,68 @@
+/* 主标题 */
+.main-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.main-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: white;
+  margin: 1rem auto;
+}
+
+/* 引语 */
+.quote {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 2rem 0;
+  opacity: 0.8;
+}
+
+/* 分点内容布局 */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* 卡片样式 */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
